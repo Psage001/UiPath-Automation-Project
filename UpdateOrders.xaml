@@ -1,0 +1,144 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="UpdateOrders" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="842.4,1320" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="UpdateOrders" sap:VirtualizedContainerService.HintSize="545.6,1255.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="483.2,1143.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e6d24b7b-704e-4110-a7ee-0c8ab78e7e1e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,926.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Orders'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6d24b7b-704e-4110-a7ee-0c8ab78e7e1e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/" CvTextArea="329, 191, 65, 17" CvTextArgument="Orders" CvType="Text" DesignTimeRectangle="321, 175, 83, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Orders'" FullSelectorArgument="&lt;webctrl aaname='Orders' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Orders' tag='A' type='' class='nav-link text-dark' check:innerText='Orders' /&gt;" Guid="f8f1e89b-072c-4e47-a077-33a64c179062" InformativeScreenshot="e57a7704ad164b62b3d51c160d6d9c10.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6d24b7b-704e-4110-a7ee-0c8ab78e7e1e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders" CvTextArea="1424, 443, 36, 18" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1426, 439, 34, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Edit' check:innerText='Edit' /&gt;" Guid="ffec75d1-2044-43d7-a543-f8a8d4cb5193" InformativeScreenshot="3c5f2d876c20b346d6abfca193e9cd5f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="Selector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Delivery Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e6d24b7b-704e-4110-a7ee-0c8ab78e7e1e" Text="Piet pompies" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Edit/2134636" CvElementArea="134, 587, 522, 48" CvTextArea="148, 602, 165, 18" CvTextArgument="4 Steve Biko Street" CvType="InputBox" DesignTimeRectangle="134, 588, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'4 Steve Biko Street'" FullSelectorArgument="&lt;webctrl id='DeliveryAddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DeliveryAddress' tag='INPUT' type='text' class='form-control' aaname='Delivery Address' /&gt;" Guid="633c97e8-7bb0-4d8f-96b1-e0b30d45364a" InformativeScreenshot="7b7ac38ddb419539c3f833369631bb9f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="133, 563, 148, 22" CvTextArgument="Delivery Address" CvType="Text" DesignTimeRectangle="134, 558, 147, 30" ElementType="Text" FriendlyName="'Delivery Address'" FullSelectorArgument="&lt;webctrl aaname='Delivery Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Delivery Address' tag='LABEL' type='' class='control-label' check:innerText='Delivery Address' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6d24b7b-704e-4110-a7ee-0c8ab78e7e1e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Edit/2134636" CvElementArea="132, 633, 75, 49" CvTextArea="148, 650, 43, 18" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="134, 635, 73, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Save' check:text='Save' /&gt;" Guid="935680d5-446c-4d14-a1d2-15b3c3c68deb" InformativeScreenshot="9116dde431ac52f723ed14809bf41f5e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="120fcb86c7d7328ca0152ce64499915c.jpg" Selector="&lt;html app='msedge.exe' title='Home Page - EcoPower_Logistics' /&gt;" Title="Home Page - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

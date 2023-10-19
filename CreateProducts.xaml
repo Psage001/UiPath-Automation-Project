@@ -1,0 +1,327 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateProducts" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="842.4,4209.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CreateProducts" sap:VirtualizedContainerService.HintSize="764.8,4144.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ProductsTabel" />
+      <Variable x:TypeArguments="x:String" Name="ProductName" />
+      <Variable x:TypeArguments="x:String" Name="ProductDescription" />
+      <Variable x:TypeArguments="x:Int32" Name="ProductId" />
+      <Variable x:TypeArguments="x:Int32" Name="UnitsinStock" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="702.4,4032.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="668.8,3946.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606.4,591.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\marku\OneDrive\Documents\University\Year 3 Semester 2\CMPG323\Project 4\CMPG323 EcoPower Logistics Data.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,281.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1">
+                      <ueab:ReadRangeX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Excel.Sheet["Products"]</CSharpValue>
+                        </InArgument>
+                      </ueab:ReadRangeX.Range>
+                      <ueab:ReadRangeX.SaveTo>
+                        <OutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ProductsTabel</CSharpReference>
+                        </OutArgument>
+                      </ueab:ReadRangeX.SaveTo>
+                    </ueab:ReadRangeX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606.4,3203.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572.8,3015.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home Page - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="529.6,2344" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2127.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Products'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/" CvTextArea="413, 123, 83, 18" CvTextArgument="Products" CvType="Text" DesignTimeRectangle="404, 107, 103, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Products'" FullSelectorArgument="&lt;webctrl aaname='Products' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Products' tag='A' type='' class='nav-link text-dark' check:innerText='Products' /&gt;" Guid="423ee1b3-c034-4fb3-b0ac-cc05ca2c8bbd" InformativeScreenshot="8901aeda7d7470bdae6347c8c80159a6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create New'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products" CvTextArea="133, 266, 104, 18" CvTextArgument="Create New" CvType="Text" DesignTimeRectangle="134, 260, 103, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Create New'" FullSelectorArgument="&lt;webctrl aaname='Create New' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Create New' tag='A' type='' class='' check:innerText='Create New' /&gt;" Guid="3cd4cbcf-7f36-4296-a479-0c783ab586ad" InformativeScreenshot="fc2fda4c157d59d830b58c4cbf6346b1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="ProductName" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="GetRowItem_2">
+                              <ui:GetRowItem.Row>
+                                <InArgument x:TypeArguments="sd:DataRow">
+                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">CurrentRow</CSharpValue>
+                                </InArgument>
+                              </ui:GetRowItem.Row>
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">ProductName</CSharpReference>
+                                </OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Product Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="132, 423, 523, 50" CvType="InputBox" DesignTimeRectangle="134, 425, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ProductName'" FullSelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductName' tag='INPUT' type='text' class='form-control' aaname='Product Name' /&gt;" Guid="7ad32779-4c1f-408c-b5c2-f366da949af3" InformativeScreenshot="e6edf3ef894413c35bba9fc65d6979a0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="133, 401, 128, 17" CvTextArgument="Product Name" CvType="Text" DesignTimeRectangle="134, 395, 127, 30" ElementType="Text" FriendlyName="'Product Name'" FullSelectorArgument="&lt;webctrl aaname='Product Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Product Name' tag='LABEL' type='' class='control-label' check:innerText='Product Name' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">ProductName</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="ProductDescription" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="GetRowItem_3">
+                              <ui:GetRowItem.Row>
+                                <InArgument x:TypeArguments="sd:DataRow">
+                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">CurrentRow</CSharpValue>
+                                </InArgument>
+                              </ui:GetRowItem.Row>
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">ProductDescription</CSharpReference>
+                                </OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Product Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="131, 500, 525, 51" CvType="InputBox" DesignTimeRectangle="134, 502, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ProductDescription'" FullSelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ProductDescription' tag='INPUT' type='text' class='form-control' aaname='Product Description' /&gt;" Guid="53b8e1d1-8d7d-4c8c-b0ef-99c6b60adc03" InformativeScreenshot="97a177d877c44b8fbb3d1cc52dc36740.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="133, 477, 176, 22" CvTextArgument="Product Description" CvType="Text" DesignTimeRectangle="134, 472, 175, 30" ElementType="Text" FriendlyName="'Product Description'" FullSelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Product Description' tag='LABEL' type='' class='control-label' check:innerText='Product Description' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">ProductDescription</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="UnitsInStock" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="GetRowItem_4">
+                              <ui:GetRowItem.Row>
+                                <InArgument x:TypeArguments="sd:DataRow">
+                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">CurrentRow</CSharpValue>
+                                </InArgument>
+                              </ui:GetRowItem.Row>
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:Int32">
+                                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">UnitsinStock</CSharpReference>
+                                </OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Units in Stock'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="134, 577, 523, 50" CvType="InputBox" DesignTimeRectangle="134, 579, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT UnitsInStock'" FullSelectorArgument="&lt;webctrl id='UnitsInStock' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='UnitsInStock' tag='INPUT' type='number' class='form-control' aaname='Units in Stock' /&gt;" Guid="acf75209-1ecd-424c-861e-381994636a06" InformativeScreenshot="c6ad4a5d019b2672baff467b63c32318.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="133, 555, 121, 18" CvTextArgument="Units in Stock" CvType="Text" DesignTimeRectangle="134, 549, 120, 30" ElementType="Text" FriendlyName="'Units in Stock'" FullSelectorArgument="&lt;webctrl aaname='Units in Stock' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Units in Stock' tag='LABEL' type='' class='control-label' check:innerText='Units in Stock' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0fd79f9-688a-4892-bd65-3eb5c6e78ae9" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Products/Create" CvElementArea="132, 624, 92, 50" CvTextArea="148, 641, 60, 18" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="134, 626, 89, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Create'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="297a38f6-fae3-494c-aaba-43f28e072269" InformativeScreenshot="d003638900cb129bf1f3a2e71a77cc4a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="120fcb86c7d7328ca0152ce64499915c.jpg" Selector="&lt;html app='msedge.exe' title='Home Page - EcoPower_Logistics' /&gt;" Title="Home Page - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="529.6,541.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="C:\Users\marku\OneDrive\Documents\University\Project 4\CMPG323 EcoPower Logistics Data.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteCellX_1">
+                              <ueab:WriteCellX.Cell>
+                                <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                  <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">Excel.Sheet["Products"].Cell["E2"]</CSharpValue>
+                                </InArgument>
+                              </ueab:WriteCellX.Cell>
+                              <ueab:WriteCellX.Value>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"True"</CSharpValue>
+                                </InArgument>
+                              </ueab:WriteCellX.Value>
+                            </ueab:WriteCellX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">ProductsTabel</CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
